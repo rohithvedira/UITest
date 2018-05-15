@@ -4,7 +4,7 @@ app = express().use(express.static(__dirname + '/')),
 http = require('http').Server(app);
 
 app.use('/', function(req, res){
-    res.sendFile(__dirname + '/signup.html');
+    res.sendFile(__dirname +'/signup.html');
 });
 
 http.listen(port, function(){
