@@ -3,46 +3,64 @@
 
 <head>
     <link rel="stylesheet" href="cascadingext.css">
-    <h1 align="center">Welcome to the Beta Website!</Website></h1>
-</head>
-<meta charset="UTF-8">
-
     
-    <body >
-        <ul>
-            <li><a href=home.php>Home</a></li>
-            <li><a href=register.php>Register</a></li>
-            <li><a href=about.php>About Us</a></li>
-        </ul>
+    <meta charset="UTF-8">
+    <script src="javascript.js"></script>
+</head>
 
-        <div class="css">
+
+
+
+    <body >
+
+           <h1 align="center">Welcome to the Beta Website!</Website></h1>
+           <ul class="uno">
+           <li class="ol"><a href=home.html>Home</a></li>
+            <li class="ol"><a href=register.html>Register</a></li>
+            <li class="ol"><a href=about.html>About Us</a></li>
+        </ul> 
+
+       <div id="topdiv">
+        <div class="css" id="loginForm">
         <h2>SIGN UP</h2>
             <p>Please fill all the required fields <br> Each section is mandatory</p>
           <form>
             Full Name:<br>
-            <input type="text" name="Username" ><br>
+            <input type="text" name="Username" id='nam3'><br>
             Gender<br>
-            M<input type="radio" name="Gender" value="male">
-            F<input type="radio" name="Gender" value="female"><br>
+            M<input type="radio" id="Gender1"  name="gender" value="male" onclick="radioselection(this.value)">
+            F<input type="radio" id="Gender2"  name="gender" value="female" onclick="radioselection(this.value)"><br>
             <br> Birthday:<br>
-            <input type="date"><br>
+            <input type="date" id='bday'><br>
             Email:<br>
-            <input type='email' name="email"><br>
+            <input type='email' name="email" id='mail'><br>
             Password:<br>
-            <input type="password" name="Password"><br>
+            <input type="password" name="Password" id='pwd'><br>
             Confirm Password:<br>
             <input type='password' name="confirm password">
             <br>
             <br>
-            <input type="Submit" value="Submit">
+            <input type="button" value="Submit" onclick="myFunction()">
             <input type="Reset" value="Reset">
             <br>
             <br>
             <a href>Already a member?Log on</a>
             <br>
          </form>
-
-        </div>
     
+        </div>
+    </div>
+    
+<center>    <div id="bottomdiv" style="display: none"  >
+      <br><br><br><text>Sign up successful!</text> <br><br>
+       Username:<p id="para1" ></p>
+       Email: <p id="para2"></p>
+       Birthday: <p id='para3'></p>
+       Gender: <p id='para4'></p>
+       <input type="reset" value="Back" onclick="window.location.reload()">
+    </div>
+</center>
+
+        
     </body>
 </html>

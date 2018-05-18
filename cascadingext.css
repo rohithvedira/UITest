@@ -14,13 +14,13 @@ body
      margin-left: 35%;
      margin-top: 50px
     }
-ul
+.uno
 {
     list-style-type: none;
     
 }
-li
+.ol
 {
     float: left;
     padding: 9px
-}
+} #Details {display:none}
